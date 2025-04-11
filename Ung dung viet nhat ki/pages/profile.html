@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="../css/profile.css" />
+  </head>
+  <body>
+    <section class="profile-section">
+      <h1>Thông tin cá nhân</h1>
+      <div class="profile-container">
+        <img
+          src="../assets/images/Avatar.png"
+          alt="Avatar"
+          class="profile-avatar"
+        />
+        <div class="profile-info">
+          <p><strong>Tên:</strong> Rikkei</p>
+          <p><strong>Email:</strong> rikkei@gmail.com</p>
+        </div>
+        <div class="profile-actions">
+          <button id="update-avatar-link">Cập nhật ảnh đại diện</button>
+          <button id="change-password-link">Đổi mật khẩu</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal Đổi ảnh đại diện -->
+    <div id="avatar-modal" class="modal hidden">
+      <div class="modal-content">
+        <h2>Đổi ảnh đại diện</h2>
+        <input type="file" id="avatar-input" accept="image/*" />
+        <button id="save-avatar-btn">Lưu</button>
+        <button id="cancel-avatar-btn">Hủy</button>
+      </div>
+    </div>
+
+    <!-- Modal Đổi mật khẩu -->
+    <div id="password-modal" class="modal hidden">
+      <div class="modal-content">
+        <h2>Đổi mật khẩu</h2>
+        <input
+          type="password"
+          id="current-password"
+          placeholder="Mật khẩu hiện tại"
+          required
+        />
+        <input
+          type="password"
+          id="new-password"
+          placeholder="Mật khẩu mới"
+          required
+        />
+        <button id="save-password-btn">Đổi mật khẩu</button>
+        <button id="cancel-password-btn">Hủy</button>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/profile.js"></script>
+  </body>
+</html>

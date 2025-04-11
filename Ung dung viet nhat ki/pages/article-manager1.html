@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/article-manager1.css" />
+  </head>
+  <body>
+    <section class="article-details">
+      <div class="post">
+        <img src="../assets/icons/Back.png" alt="" />
+        <div class="post-header">
+          <img src="../assets/images/Avatar.png" alt="User Avatar" />
+          <div class="post-info">
+            <h3>A Productive Day at Work</h3>
+            <p class="summary">
+              Today was a really productive day at work. I managed to finish a
+              report ahead of schedule and received positive feedback from my
+              manager.
+            </p>
+            <p class="stats">Likes: 15 💓 Replies: 6 🗯</p>
+          </div>
+        </div>
+      </div>
+      <div class="comments-section">
+        <h4>Comments</h4>
+        <!-- Khu vực hiển thị bình luận -->
+        <div id="comments-container">
+          <!-- Các bình luận sẽ được render tại đây -->
+        </div>
+
+        <!-- Form viết bình luận mới -->
+        <form id="comment-form">
+          <input
+            type="text"
+            id="comment-text"
+            placeholder="Viết bình luận của bạn tại đây..."
+            required
+          />
+          <button type="submit">Bình luận</button>
+        </form>
+      </div>
+    </section>
+    <script src="../js/article-manager1.js"></script>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.article-details {
+    width: 50%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+.post {
+    background-color: #f0e6e6;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+
+.post-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.article-details img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.post-info h3 {
+    display: flex;
+   justify-content: center;
+    margin: 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.date {
+    font-size: 14px;
+    color: #6941C6;
+    font-weight: 600;
+}
+
+.summary {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    top: 30px;
+}
+
+.stats {
+    font-size: 14px;
+    color: #007bff;
+    margin-top: 5px;
+}
+
+
+.comments-section {
+    margin-top: 20px;
+}
+.comments-section.vector{
+    width: 10px;
+    height: 10%;
+
+}
+.comment {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+#comment-text {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  #comment-text:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+  }
+  
+  button[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  button[type="submit"]:active {
+    background-color: #004085;
+    transform: scale(0.95);
+  }
+  
